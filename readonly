@@ -1,0 +1,1 @@
+ansible-playbook os.yml -i hosts --extra-vars "variable_host"=ubuntu_prod_sg
