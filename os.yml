@@ -1,9 +1,4 @@
 ---
-- hosts: "{{ variable_host }}"
-  gather_facts: False
-  tasks:
-    - name: Check Dist Version
-      shell: cat /etc/os-release
-      register: response
-
-    - debug: msg="{{ response.stdout }}"
+- name: Include task list in play only if the condition is true
+  include: "{{ variable_host }}.yaml"
+  when: variable_host is defined

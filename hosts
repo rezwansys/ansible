@@ -5,8 +5,6 @@
 10.109.207.26
 10.109.206.62
 10.109.206.12
-10.109.206.235
-10.109.206.167
 10.109.207.170
 10.109.207.153
 10.109.207.180
@@ -18,8 +16,30 @@
 10.109.206.175
 10.109.206.204
 
+[centos_prod_sg]
+10.109.206.14
+10.109.207.86
+10.109.206.158
+10.109.207.33
+10.109.207.10
+10.109.207.106
+10.109.207.18
+10.109.207.31
+10.109.207.65
+10.109.206.183
+10.109.206.251
+10.109.207.174
+10.109.206.228
+10.109.207.237
+10.109.206.217
+10.109.207.166
+10.109.207.213
+10.109.207.209
+
 [awsimage_prod_sg]
 10.109.206.74
+10.109.206.167
+10.109.206.235
 
 [ubuntu_prod_sg:vars]
 ansible_user=ubuntu
@@ -28,3 +48,7 @@ ansible_ssh_private_key_file=/root/prod-hoi-ubuntu.pem
 [awsimage_prod_sg:vars]
 ansible_user=ubuntu
 ansible_ssh_private_key_file=/root/id_oihkdev.pem
+
+[centos_prod_sg:vars]
+ansible_user=centos
+ansible_ssh_private_key_file=/root/prod-hoi-centos.pem
