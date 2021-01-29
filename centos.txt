@@ -1,0 +1,93 @@
+
+PLAY [centos_prod_sg] ***********************************************************************************************
+
+TASK [Check Dist Version] *******************************************************************************************
+changed: [10.109.206.158]
+changed: [10.109.207.10]
+changed: [10.109.206.14]
+changed: [10.109.207.86]
+fatal: [10.109.207.65]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: centos@10.109.207.65: Permission denied (publickey,gssapi-keyex,gssapi-with-mic).", "unreachable": true}
+changed: [10.109.207.33]
+changed: [10.109.207.18]
+changed: [10.109.207.106]
+changed: [10.109.207.31]
+changed: [10.109.206.183]
+fatal: [10.109.206.228]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Welcome to AudioCodes CLI\r\ncentos@10.109.206.228: Permission denied (password,publickey).", "unreachable": true}
+changed: [10.109.207.237]
+changed: [10.109.206.251]
+changed: [10.109.207.174]
+changed: [10.109.206.217]
+changed: [10.109.207.166]
+changed: [10.109.207.213]
+changed: [10.109.207.209]
+
+TASK [debug] ********************************************************************************************************
+ok: [10.109.206.14] => {
+    "msg": "CentOS Linux release 7.7.1908 (Core)"
+}
+ok: [10.109.207.86] => {
+    "msg": "CentOS Linux release 7.5.1804 (Core) "
+}
+ok: [10.109.206.158] => {
+    "msg": "CentOS Linux release 7.7.1908 (Core)"
+}
+ok: [10.109.207.33] => {
+    "msg": "CentOS Linux release 7.5.1804 (Core) "
+}
+ok: [10.109.207.10] => {
+    "msg": "CentOS Linux release 7.4.1708 (Core) "
+}
+ok: [10.109.207.106] => {
+    "msg": "CentOS Linux release 7.6.1810 (Core) "
+}
+ok: [10.109.207.18] => {
+    "msg": "CentOS Linux release 7.6.1810 (Core) "
+}
+ok: [10.109.207.31] => {
+    "msg": "CentOS Linux release 7.6.1810 (Core) "
+}
+ok: [10.109.206.183] => {
+    "msg": "CentOS Linux release 7.6.1810 (Core) "
+}
+ok: [10.109.206.251] => {
+    "msg": "CentOS Linux release 7.6.1810 (Core) "
+}
+ok: [10.109.207.174] => {
+    "msg": "CentOS Linux release 7.6.1810 (Core) "
+}
+ok: [10.109.207.237] => {
+    "msg": "CentOS Linux release 7.7.1908 (Core)"
+}
+ok: [10.109.206.217] => {
+    "msg": "CentOS Linux release 7.7.1908 (Core)"
+}
+ok: [10.109.207.166] => {
+    "msg": "CentOS Linux release 7.8.2003 (Core)"
+}
+ok: [10.109.207.213] => {
+    "msg": "CentOS Linux release 7.8.2003 (Core)"
+}
+ok: [10.109.207.209] => {
+    "msg": "CentOS Linux release 7.7.1908 (Core)"
+}
+
+PLAY RECAP **********************************************************************************************************
+10.109.206.14              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.206.158             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.206.183             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.206.217             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.206.228             : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.206.251             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.10              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.106             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.166             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.174             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.18              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.209             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.213             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.237             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.31              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.33              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.65              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.109.207.86              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

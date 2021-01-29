@@ -1,0 +1,9 @@
+---
+- hosts: "{{ variable_host }}"
+  gather_facts: False
+  tasks:
+    - name: Check Dist Version
+      shell: cat /etc/redhat-release
+      register: response
+
+    - debug: msg="{{ response.stdout }}"
